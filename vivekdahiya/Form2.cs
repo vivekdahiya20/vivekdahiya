@@ -20,11 +20,13 @@ namespace vivekdahiya
 
         private void button1_Click(object sender, EventArgs e)
         {
-                       
+
+                    
 
             var disabledForms = DisableForms();
             using (var dlg = new dialogform())
             {
+                dlg.ShowInTaskbar = false;
                 dlg.ShowDialog();
             }
             EnableForms(disabledForms);
