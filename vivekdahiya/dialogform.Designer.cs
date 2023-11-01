@@ -50,6 +50,7 @@ namespace vivekdahiya
             this.Controls.Add(this.label1);
             this.Name = "dialogform";
             this.Text = "dialogform";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.dialogform_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -16,5 +16,10 @@ namespace vivekdahiya
         {
             InitializeComponent();
         }
+
+        private void dialogform_FormClosed(object sender, FormClosedEventArgs e)
+        {
+         
+        }
     }
 }

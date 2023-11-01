@@ -31,8 +31,8 @@ namespace vivekdahiya
         {
             this.topPanel = new System.Windows.Forms.Panel();
             this.bottompanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.bottompanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,16 +58,6 @@ namespace vivekdahiya
             this.bottompanel.TabIndex = 1;
             this.bottompanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "I am bottom panel";
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -77,6 +67,17 @@ namespace vivekdahiya
             this.button1.TabIndex = 1;
             this.button1.Text = "Help";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(20, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "I am bottom panel";
             // 
             // Form1
             // 
@@ -95,11 +96,10 @@ namespace vivekdahiya
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel topPanel;
         private System.Windows.Forms.Panel bottompanel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Panel topPanel;
     }
 }
 
