@@ -20,14 +20,7 @@ namespace vivekdahiya
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-
-            //dialogform df = new dialogform();
-            //df.FormBorderStyle = FormBorderStyle.None;
-            //df.ShowInTaskbar = false;           
-            //this.Enabled = false;
-            //df.Show(this);
-
+                       
 
             var disabledForms = DisableForms();
             using (var dlg = new dialogform())
